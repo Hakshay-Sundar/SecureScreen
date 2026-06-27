@@ -5,28 +5,42 @@ SecureScreen is a utility plugin/application for macOS designed to lock the user
 ## User Review Required
 
 > [!IMPORTANT]
-> **Permissions Needed**:
-> To capture all keystrokes and override standard system hotkeys (like Command+Tab, Command+Option+Esc) when the lock screen is active, the application will enter macOS **Kiosk Mode** (using `.disableProcessSwitching`, `.hideDock`, and `.disableForceQuit` presentation options). This does not require Root/Sudo privileges, but standard system-level API behaviors will be restricted strictly while the screen is locked.
+> **Accessibility Permission Required (REVISED)**:
+> The Codex prototype revealed that kiosk mode options alone do not block trackpad gestures (space switching), Spotlight (Cmd+Space), or Dock clicks. Full input blocking requires a **CGEventTap** at `cgAnnotatedSessionEventTap`, which macOS gates behind Accessibility permission. The app will prompt for this at launch and refuse to lock if it is not granted.
 >
 > **Global Shortcut Integration**:
-> We will implement global shortcuts using the standard macOS **Carbon HotKey API**. This avoids requiring the user to grant macOS Accessibility permissions (which would be required if we used `CGEventTap`).
+> **Lock** (⌥⇧L) is registered via Carbon HotKey API (no extra permissions). **Unlock** (⌥⇧U) is handled inside the CGEventTap callback — Carbon is not used for unlock because the event tap consumes events before Carbon sees them when locked.
+
+> [!IMPORTANT]
+> **Known Issues Fixed in This Revision**:
+> - Codex unlock failure → EventBlocker now calls `pauseForAuth()` before `LAContext.evaluatePolicy`, allowing keyboard through for password entry.
+> - Codex overlay as centered panel → `LockWindow.frame = screen.frame` (full `NSScreen.frame`, not `visibleFrame`), covers dock and menu bar area.
+> - Codex trackpad/Spotlight/Dock not blocked → CGEventTap blocks `.keyDown`, `.scrollWheel`, and mouse events at session level; kiosk options block Cmd+Tab and Cmd+Opt+Esc.
+> - Codex status bar icon not interactable while locked → `LockWindow.ignoresMouseEvents = true` (window is visual only); EventBlocker allowlists `statusItemScreenRect` so the shield icon receives clicks.
 
 ## Core Decisions & Configurations (Aligned with User Feedback)
 
 > [!TIP]
 > 1. **Default Global Shortcuts**:
->    - **Lock Screen**: `Option + Shift + L` (⌥⇧L)
->    - **Unlock Screen**: `Option + Shift + U` (⌥⇧U) to trigger the Touch ID/Password verification.
-> 2. **Translucent Lock Shield**:
->    - The lock screen overlay will be a full-screen, click-blocking window with **customizable translucency** (e.g., 1% to 50% opacity).
->    - This allows the user to see background task outputs (like terminal scrolls or logs) while preventing any keyboard, mouse, or trackpad gesture interactions from passing through.
->    - To a third person, the laptop will look like it is awake and running but hung.
+>    - **Lock Screen**: `Option + Shift + L` (⌥⇧L) — Carbon HotKey, no Accessibility needed
+>    - **Unlock Screen**: `Option + Shift + U` (⌥⇧U) — handled in CGEventTap callback
+> 2. **Full-Screen Blur Overlay**:
+>    - `NSVisualEffectView` with `blendingMode = .behindWindow`, `material = .fullScreenUI`, `appearance = .darkAqua` fills the ENTIRE `screen.frame` (including dock and menu bar area) on every connected display.
+>    - Default `alphaValue = 0.85`; configurable via status bar presets (2%, 10%, 25%, 50%, 85%).
+>    - Produces frosted-glass "hung screen" illusion — background task output visible but blurred.
 > 3. **Minimal UI Overlay**:
->    - No digital clock or lock icon on the overlay window to maintain the "hung screen" illusion.
->    - A subtle, dim instruction text (e.g., "Locked: Press ⌥⇧U to Unlock") will be displayed or faded in when a keystroke or click attempt occurs.
-> 4. **Status Bar Menu Controls**:
->    - provision to modify overlay translucency directly via a menu slider or presets.
->    - A **"Test Mode"** utility that runs our verification sleep-prevention script and verifies the background tasks are uninterrupted.
+>    - No clock, no lock icon. "Locked — Press ⌥⇧U to Unlock" fades in for 3 s when a blocked event is detected.
+> 4. **Status Bar Menu (Locked State)**:
+>    - While locked: **only** "Emergency Unlock…" and "Quit SecureScreen" are shown.
+>    - "Emergency Unlock…" is the failsafe — triggers the same `LAContext.evaluatePolicy(.deviceOwnerAuthentication)` as ⌥⇧U.
+>    - "Quit while locked" also requires authentication before quitting.
+>    - While unlocked: "Lock Screen ⌥⇧L", Overlay Opacity submenu, Quit.
+> 5. **Input Blocking Scope** (ALL of the following are blocked when locked):
+>    - Keyboard (all keys, including Cmd+Tab, Cmd+Space, Cmd+Opt+Esc, Cmd+H)
+>    - Trackpad two-finger swipe (space switching)
+>    - Trackpad three-finger swipe (Mission Control)
+>    - Dock clicks (Dock hidden via kiosk option)
+>    - All other menu bar items (only our status item rect is a passthrough)
 
 ---
 

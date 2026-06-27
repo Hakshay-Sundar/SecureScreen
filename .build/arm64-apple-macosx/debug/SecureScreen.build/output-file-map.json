@@ -1,0 +1,59 @@
+{
+  "": {
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/master.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/AppDelegate.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/AppDelegate.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/AppDelegate.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/EventBlocker.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/EventBlocker.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/EventBlocker.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/EventBlocker~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/EventBlocker.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/HotkeyManager.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/HotkeyManager.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/HotkeyManager.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/HotkeyManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/HotkeyManager.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockManager.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/LockManager.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/LockManager.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/LockManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/LockManager.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockWindow.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/LockWindow.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/LockWindow.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/LockWindow~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/LockWindow.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/PermissionsManager.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/PermissionsManager.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/PermissionsManager.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/PermissionsManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/PermissionsManager.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/ShieldView.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/ShieldView.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/ShieldView.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/ShieldView~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/ShieldView.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/StatusBarController.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/StatusBarController.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/StatusBarController~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/StatusBarController.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/main.swift": {
+    "dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/main.d",
+    "object": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/main.swift.o",
+    "swiftmodule": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/hakshaysundar/Documents/Projects/SecureScreen/.build/arm64-apple-macosx/debug/SecureScreen.build/main.swiftdeps"
+  }
+}
