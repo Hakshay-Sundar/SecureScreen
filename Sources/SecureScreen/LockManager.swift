@@ -10,6 +10,7 @@ final class LockManager {
     private var isAuthenticating = false
     private var lockWindows: [LockWindow] = []
     private var sleepAssertion: IOPMAssertionID = 0
+    private var wakeObserver: Any?
 
     func lock() {
         guard !isLocked else { return }
@@ -46,6 +47,16 @@ final class LockManager {
 
         // 5. Update menu bar to show locked state
         StatusBarController.shared.setLocked(true)
+
+        // 6. Re-arm the CGEventTap if macOS disabled it during sleep
+        wakeObserver = NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didWakeNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            guard self?.isLocked == true else { return }
+            EventBlocker.shared.reenableTap()
+        }
     }
 
     func initiateUnlock() {
@@ -89,6 +100,11 @@ final class LockManager {
         isAuthenticating = false
 
         EventBlocker.shared.disable()
+
+        if let obs = wakeObserver {
+            NSWorkspace.shared.notificationCenter.removeObserver(obs)
+            wakeObserver = nil
+        }
 
         NSApp.presentationOptions = []
 

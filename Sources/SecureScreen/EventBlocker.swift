@@ -56,22 +56,42 @@ final class EventBlocker {
         pausedForAuth = false
     }
 
-    // Temporarily allow keyboard so LAContext can receive password input
+    // Fully disable tap so LAContext auth dialog (cross-process SecurityAgent) receives all events
     func pauseForAuth() {
         pausedForAuth = true
+        if let tap = tap { CGEvent.tapEnable(tap: tap, enable: false) }
     }
 
     func resumeAfterAuth() {
         pausedForAuth = false
+        if let tap = tap { CGEvent.tapEnable(tap: tap, enable: true) }
+    }
+
+    // Fully disable tap during NSMenu tracking so dropdown items receive clicks
+    func suspendForMenuTracking() {
+        if let tap = tap { CGEvent.tapEnable(tap: tap, enable: false) }
+    }
+
+    func resumeFromMenuTracking() {
+        // Only re-enable if still locked and not mid-auth
+        if isEnabled && !pausedForAuth {
+            if let tap = tap { CGEvent.tapEnable(tap: tap, enable: true) }
+        }
+    }
+
+    func reenableTap() {
+        guard let tap = tap else { return }
+        CGEvent.tapEnable(tap: tap, enable: true)
     }
 
     private func handle(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent) -> Unmanaged<CGEvent>? {
         guard isEnabled else { return Unmanaged.passRetained(event) }
 
+        // Auth dialog in progress — let everything through (password UI needs keyboard + mouse)
+        if pausedForAuth { return Unmanaged.passRetained(event) }
+
         // Keyboard path
         if type == .keyDown || type == .keyUp || type == .flagsChanged {
-            if pausedForAuth { return Unmanaged.passRetained(event) }
-
             // Allow ⌥⇧U to trigger unlock (keyDown only to avoid double-fire)
             if type == .keyDown {
                 let flags = event.flags.intersection([.maskAlternate, .maskShift, .maskCommand, .maskControl])
@@ -90,7 +110,8 @@ final class EventBlocker {
            type == .rightMouseDown || type == .rightMouseUp ||
            type == .leftMouseDragged || type == .rightMouseDragged || type == .otherMouseDragged {
             let loc = event.location
-            if !allowedRect.isEmpty && allowedRect.contains(loc) {
+            // Allow exact status item rect OR any click in the menu bar strip (y < 40 in CG coords)
+            if (!allowedRect.isEmpty && allowedRect.contains(loc)) || loc.y < 40 {
                 return Unmanaged.passRetained(event)
             }
             return nil

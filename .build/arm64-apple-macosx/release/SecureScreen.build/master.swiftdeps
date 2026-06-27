@@ -1,14 +1,14 @@
 version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
 options: "5f66dd76d2e6d3c12ccb3d9de618e9c69dada0f809abf7b7dbb60fe9b48a47d2"
-build_start_time: [1782584378, 933694000]
-build_end_time: [1782584380, 699007000]
+build_start_time: [1782586432, 402510000]
+build_end_time: [1782586433, 429394000]
 inputs:
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/AppDelegate.swift": [1782572038, 229898879]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/EventBlocker.swift": [1782583769, 363756697]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/EventBlocker.swift": [1782586277, 250306369]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/HotkeyManager.swift": [1782578847, 284144552]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockManager.swift": [1782583759, 155155075]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockManager.swift": [1782585698, 868362566]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockWindow.swift": [1782572611, 762944306]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/PermissionsManager.swift": [1782572033, 744096801]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/ShieldView.swift": [1782572603, 252679917]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift": [1782583729, 648514906]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift": [1782586287, 613917232]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/main.swift": [1782572040, 499097894]

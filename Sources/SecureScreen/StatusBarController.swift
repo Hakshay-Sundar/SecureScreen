@@ -1,6 +1,6 @@
 import AppKit
 
-final class StatusBarController: NSObject {
+final class StatusBarController: NSObject, NSMenuDelegate {
     static let shared = StatusBarController()
     private override init() {}
 
@@ -35,6 +35,7 @@ final class StatusBarController: NSObject {
 
     private func buildMenu(locked: Bool) {
         let menu = NSMenu()
+        menu.delegate = self
 
         if locked {
             let emergency = NSMenuItem(
@@ -76,6 +77,18 @@ final class StatusBarController: NSObject {
         menu.addItem(quit)
 
         statusItem.menu = menu
+    }
+
+    func menuWillOpen(_ menu: NSMenu) {
+        if LockManager.shared.isLocked {
+            EventBlocker.shared.suspendForMenuTracking()
+        }
+    }
+
+    func menuDidClose(_ menu: NSMenu) {
+        if LockManager.shared.isLocked {
+            EventBlocker.shared.resumeFromMenuTracking()
+        }
     }
 
     @objc private func lockScreen() {
