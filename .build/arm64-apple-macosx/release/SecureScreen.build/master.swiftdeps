@@ -1,7 +1,7 @@
 version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
 options: "5f66dd76d2e6d3c12ccb3d9de618e9c69dada0f809abf7b7dbb60fe9b48a47d2"
-build_start_time: [1782673326, 119702000]
-build_end_time: [1782673327, 139578000]
+build_start_time: [1782673875, 69221000]
+build_end_time: [1782673876, 275999000]
 inputs:
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/AppDelegate.swift": [1782671544, 279312129]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/EventBlocker.swift": [1782671557, 658260828]
@@ -10,5 +10,5 @@ inputs:
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockWindow.swift": [1782572611, 762944306]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/PermissionsManager.swift": [1782669235, 828611320]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/ShieldView.swift": [1782572603, 252679917]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift": [1782673322, 613584100]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift": [1782673870, 406187558]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/main.swift": [1782572040, 499097894]

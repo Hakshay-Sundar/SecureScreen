@@ -1,0 +1,36 @@
+{
+  "" : {
+    "dependencies" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/Build/Intermediates.noindex/SecureScreen.build/Debug/SecureScreen--162AE32B082692D-testable.build/Objects-normal/arm64/SecureScreen--162AE32B082692D-testable-master.d",
+    "diagnostics" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/Build/Intermediates.noindex/SecureScreen.build/Debug/SecureScreen--162AE32B082692D-testable.build/Objects-normal/arm64/SecureScreen--162AE32B082692D-testable-master.dia",
+    "emit-module-dependencies" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/Build/Intermediates.noindex/SecureScreen.build/Debug/SecureScreen--162AE32B082692D-testable.build/Objects-normal/arm64/SecureScreen--162AE32B082692D-testable-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/Build/Intermediates.noindex/SecureScreen.build/Debug/SecureScreen--162AE32B082692D-testable.build/Objects-normal/arm64/SecureScreen--162AE32B082692D-testable-master-emit-module.dia",
+    "swift-dependencies" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/Build/Intermediates.noindex/SecureScreen.build/Debug/SecureScreen--162AE32B082692D-testable.build/Objects-normal/arm64/SecureScreen--162AE32B082692D-testable-master.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/AppDelegate.swift" : {
+
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/EventBlocker.swift" : {
+
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/HotkeyManager.swift" : {
+
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockManager.swift" : {
+
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockWindow.swift" : {
+
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/PermissionsManager.swift" : {
+
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/ShieldView.swift" : {
+
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift" : {
+
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/main.swift" : {
+
+  }
+}

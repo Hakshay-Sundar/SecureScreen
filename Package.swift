@@ -12,6 +12,7 @@ let package = Package(
                 .linkedFramework("Carbon"),
                 .linkedFramework("IOKit"),
                 .linkedFramework("LocalAuthentication"),
+                .linkedFramework("ServiceManagement"),
             ]
         ),
     ]

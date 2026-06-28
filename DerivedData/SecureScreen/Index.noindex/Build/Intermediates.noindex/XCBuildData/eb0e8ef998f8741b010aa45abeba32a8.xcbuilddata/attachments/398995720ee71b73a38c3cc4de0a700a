@@ -1,0 +1,4 @@
+module SecureScreen {
+header "SecureScreen-Swift.h"
+export *
+}

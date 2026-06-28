@@ -1,4 +1,5 @@
 import AppKit
+import ServiceManagement
 
 final class StatusBarController: NSObject, NSMenuDelegate {
     static let shared = StatusBarController()
@@ -59,6 +60,13 @@ final class StatusBarController: NSObject, NSMenuDelegate {
             let opacityItem = NSMenuItem(title: "Overlay Opacity", action: nil, keyEquivalent: "")
             opacityItem.submenu = opacityMenu
             menu.addItem(opacityItem)
+
+            menu.addItem(NSMenuItem.separator())
+
+            let launchItem = NSMenuItem(title: "Launch at Login", action: #selector(toggleLaunchAtLogin), keyEquivalent: "")
+            launchItem.target = self
+            launchItem.state = SMAppService.mainApp.status == .enabled ? .on : .off
+            menu.addItem(launchItem)
         }
 
         if !locked { menu.addItem(NSMenuItem.separator()) }
@@ -85,6 +93,16 @@ final class StatusBarController: NSObject, NSMenuDelegate {
 
     @objc private func lockScreen() {
         LockManager.shared.lock()
+    }
+
+    @objc private func toggleLaunchAtLogin() {
+        let service = SMAppService.mainApp
+        if service.status == .enabled {
+            try? service.unregister()
+        } else {
+            try? service.register()
+        }
+        buildMenu(locked: false)
     }
 
     @objc private func setOpacity(_ sender: NSMenuItem) {
