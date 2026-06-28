@@ -1,0 +1,64 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "PACKAGE-TARGET:SecureScreen--162AE32B082692D-testable"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SecureScreen"
+    }
+  ],
+  "containerPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx15.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Products",
+      "pchPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

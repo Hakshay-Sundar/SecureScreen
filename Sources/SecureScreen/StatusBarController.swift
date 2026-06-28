@@ -37,15 +37,7 @@ final class StatusBarController: NSObject, NSMenuDelegate {
         let menu = NSMenu()
         menu.delegate = self
 
-        if locked {
-            let emergency = NSMenuItem(
-                title: "Emergency Unlock…",
-                action: #selector(emergencyUnlock),
-                keyEquivalent: ""
-            )
-            emergency.target = self
-            menu.addItem(emergency)
-        } else {
+        if !locked {
             let lockItem = NSMenuItem(
                 title: "Lock Screen  ⌥⇧L",
                 action: #selector(lockScreen),
@@ -69,7 +61,7 @@ final class StatusBarController: NSObject, NSMenuDelegate {
             menu.addItem(opacityItem)
         }
 
-        menu.addItem(NSMenuItem.separator())
+        if !locked { menu.addItem(NSMenuItem.separator()) }
 
         let quitKey = locked ? "" : "q"
         let quit = NSMenuItem(title: "Quit SecureScreen", action: #selector(quitApp), keyEquivalent: quitKey)
@@ -93,10 +85,6 @@ final class StatusBarController: NSObject, NSMenuDelegate {
 
     @objc private func lockScreen() {
         LockManager.shared.lock()
-    }
-
-    @objc private func emergencyUnlock() {
-        LockManager.shared.initiateUnlock()
     }
 
     @objc private func setOpacity(_ sender: NSMenuItem) {

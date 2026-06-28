@@ -1,0 +1,58 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "PACKAGE-PRODUCT:SecureScreen"
+    }
+  ],
+  "containerPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx15.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Products",
+      "derivedDataPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

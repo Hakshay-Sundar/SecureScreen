@@ -10,6 +10,8 @@ final class EventBlocker {
     var allowedRect: CGRect = .zero
 
     private var tap: CFMachPort?
+    // Cached on setup(); menu bar sits at CG y ∈ [0, menuBarThreshold]
+    private var menuBarThreshold: CGFloat = 44
 
     func setup() {
         // Events to intercept when locked
@@ -43,6 +45,7 @@ final class EventBlocker {
         let source = CFMachPortCreateRunLoopSource(kCFAllocatorDefault, tap, 0)
         CFRunLoopAddSource(CFRunLoopGetMain(), source, .commonModes)
         CGEvent.tapEnable(tap: tap, enable: true)
+        menuBarThreshold = NSStatusBar.system.thickness + 4
     }
 
     func enable(allowedRect: CGRect) {
@@ -85,13 +88,26 @@ final class EventBlocker {
     }
 
     private func handle(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent) -> Unmanaged<CGEvent>? {
+        // macOS auto-disables the tap after a period of inactivity or under load.
+        // Re-enable immediately so blocking stays live.
+        if type == .tapDisabledByTimeout || type == .tapDisabledByUserInput {
+            if let tap = tap { CGEvent.tapEnable(tap: tap, enable: true) }
+            return nil
+        }
+
         guard isEnabled else { return Unmanaged.passRetained(event) }
 
         // Auth dialog in progress — let everything through (password UI needs keyboard + mouse)
         if pausedForAuth { return Unmanaged.passRetained(event) }
 
+        // Pass modifier-only events through: suppressing flagsChanged corrupts macOS modifier
+        // state, causing the ⌥⇧U check below to see wrong flags on subsequent keyDowns.
+        if type == .flagsChanged {
+            return Unmanaged.passRetained(event)
+        }
+
         // Keyboard path
-        if type == .keyDown || type == .keyUp || type == .flagsChanged {
+        if type == .keyDown || type == .keyUp {
             // Allow ⌥⇧U to trigger unlock (keyDown only to avoid double-fire)
             if type == .keyDown {
                 let flags = event.flags.intersection([.maskAlternate, .maskShift, .maskCommand, .maskControl])
@@ -111,7 +127,7 @@ final class EventBlocker {
            type == .leftMouseDragged || type == .rightMouseDragged || type == .otherMouseDragged {
             let loc = event.location
             // Allow exact status item rect OR any click in the menu bar strip (y < 40 in CG coords)
-            if (!allowedRect.isEmpty && allowedRect.contains(loc)) || loc.y < 40 {
+            if (!allowedRect.isEmpty && allowedRect.contains(loc)) || loc.y < menuBarThreshold {
                 return Unmanaged.passRetained(event)
             }
             return nil

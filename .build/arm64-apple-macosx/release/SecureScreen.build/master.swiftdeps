@@ -1,14 +1,14 @@
 version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
 options: "5f66dd76d2e6d3c12ccb3d9de618e9c69dada0f809abf7b7dbb60fe9b48a47d2"
-build_start_time: [1782586432, 402510000]
-build_end_time: [1782586433, 429394000]
+build_start_time: [1782673326, 119702000]
+build_end_time: [1782673327, 139578000]
 inputs:
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/AppDelegate.swift": [1782572038, 229898879]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/EventBlocker.swift": [1782586277, 250306369]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/HotkeyManager.swift": [1782578847, 284144552]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockManager.swift": [1782585698, 868362566]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/AppDelegate.swift": [1782671544, 279312129]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/EventBlocker.swift": [1782671557, 658260828]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/HotkeyManager.swift": [1782671572, 703892763]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockManager.swift": [1782669235, 828339820]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockWindow.swift": [1782572611, 762944306]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/PermissionsManager.swift": [1782572033, 744096801]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/PermissionsManager.swift": [1782669235, 828611320]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/ShieldView.swift": [1782572603, 252679917]
-  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift": [1782586287, 613917232]
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift": [1782673322, 613584100]
   "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/main.swift": [1782572040, 499097894]
