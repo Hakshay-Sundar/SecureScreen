@@ -6,6 +6,132 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
+		<key>279C2E6A-57F6-41E8-A6C9-7C05C4F8EF6F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>279C2E6A-57F6-41E8-A6C9-7C05C4F8EF6F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SecureScreen</string>
+			<key>timeStartedRecording</key>
+			<real>804367946.04776704</real>
+			<key>timeStoppedRecording</key>
+			<real>804367946.23044395</real>
+			<key>title</key>
+			<string>Build SecureScreen</string>
+			<key>uniqueIdentifier</key>
+			<string>279C2E6A-57F6-41E8-A6C9-7C05C4F8EF6F</string>
+		</dict>
+		<key>81FDE4FE-2306-4CC0-B67E-19340AFD4DBC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>81FDE4FE-2306-4CC0-B67E-19340AFD4DBC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SecureScreen</string>
+			<key>timeStartedRecording</key>
+			<real>804368006.82193601</real>
+			<key>timeStoppedRecording</key>
+			<real>804368006.86088705</real>
+			<key>title</key>
+			<string>Build SecureScreen</string>
+			<key>uniqueIdentifier</key>
+			<string>81FDE4FE-2306-4CC0-B67E-19340AFD4DBC</string>
+		</dict>
+		<key>9E69D1FB-B0D5-406F-AC52-01241F29F419</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9E69D1FB-B0D5-406F-AC52-01241F29F419.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SecureScreen</string>
+			<key>timeStartedRecording</key>
+			<real>804367989.91435206</real>
+			<key>timeStoppedRecording</key>
+			<real>804367989.95853603</real>
+			<key>title</key>
+			<string>Build SecureScreen</string>
+			<key>uniqueIdentifier</key>
+			<string>9E69D1FB-B0D5-406F-AC52-01241F29F419</string>
+		</dict>
 		<key>C56F6749-5967-46BC-A233-A70FE351E6E0</key>
 		<dict>
 			<key>className</key>
@@ -47,6 +173,90 @@
 			<string>Build SecureScreen</string>
 			<key>uniqueIdentifier</key>
 			<string>C56F6749-5967-46BC-A233-A70FE351E6E0</string>
+		</dict>
+		<key>C5F6096E-82C7-42C0-811E-7B3953FA6296</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C5F6096E-82C7-42C0-811E-7B3953FA6296.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SecureScreen</string>
+			<key>timeStartedRecording</key>
+			<real>804367927.35758996</real>
+			<key>timeStoppedRecording</key>
+			<real>804367928.70655501</real>
+			<key>title</key>
+			<string>Build SecureScreen</string>
+			<key>uniqueIdentifier</key>
+			<string>C5F6096E-82C7-42C0-811E-7B3953FA6296</string>
+		</dict>
+		<key>D4650483-C94B-4911-A989-7BDC3E0D2F1B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D4650483-C94B-4911-A989-7BDC3E0D2F1B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SecureScreen</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SecureScreen</string>
+			<key>timeStartedRecording</key>
+			<real>804368049.94448996</real>
+			<key>timeStoppedRecording</key>
+			<real>804368055.45591795</real>
+			<key>title</key>
+			<string>Build SecureScreen</string>
+			<key>uniqueIdentifier</key>
+			<string>D4650483-C94B-4911-A989-7BDC3E0D2F1B</string>
 		</dict>
 		<key>FD5BA540-DA32-4307-8693-70CFA994DBC1</key>
 		<dict>

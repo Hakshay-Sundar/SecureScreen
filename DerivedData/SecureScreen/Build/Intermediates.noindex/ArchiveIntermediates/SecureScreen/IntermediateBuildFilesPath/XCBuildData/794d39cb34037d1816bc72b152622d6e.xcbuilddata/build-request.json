@@ -1,0 +1,76 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "PACKAGE-PRODUCT:SecureScreen"
+    }
+  ],
+  "containerPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "install",
+    "activeArchitecture" : "undefined_arch",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "macosx",
+      "sdk" : "macosx15.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64",
+        "arm64e",
+        "x86_64",
+        "x86_64h"
+      ],
+      "targetArchitecture" : "undefined_arch"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Products",
+      "derivedDataPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "install",
+          "ASSET_PACK_FOLDER_PATH" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/InstallationBuildProductsLocation/OnDemandResources",
+          "ASSETCATALOG_COMPILER_FLATTENED_APP_ICON_PATH" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/BuildProductsPath/ProductIcon.png",
+          "DEPLOYMENT_LOCATION" : "YES",
+          "DEPLOYMENT_POSTPROCESSING" : "YES",
+          "DSTROOT" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/InstallationBuildProductsLocation",
+          "EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE" : "NO",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_SIGNATURE_AGGREGATION" : "YES",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "INDEX_ENABLE_DATA_STORE" : "NO",
+          "MESSAGES_APPLICATION_EXTENSION_SUPPORT_FOLDER_PATH" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/BuildProductsPath/MessagesApplicationExtensionSupport",
+          "MESSAGES_APPLICATION_SUPPORT_FOLDER_PATH" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/BuildProductsPath/MessagesApplicationSupport",
+          "OBJROOT" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath",
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "SHARED_PRECOMPS_DIR" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/PrecompiledHeaders",
+          "SIGNATURE_METADATA_FOLDER_PATH" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/BuildProductsPath/Signatures",
+          "SWIFT_STDLIB_TOOL_UNSIGNED_DESTINATION_DIR" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/BuildProductsPath/SwiftSupport",
+          "SYMROOT" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/BuildProductsPath",
+          "WATCHKIT_2_SUPPORT_FOLDER_PATH" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/BuildProductsPath/WatchKitSupport2"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "archive",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

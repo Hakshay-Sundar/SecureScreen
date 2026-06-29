@@ -1,0 +1,55 @@
+{
+  "" : {
+    "const-values" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/SecureScreen-master.swiftconstvalues",
+    "dependencies" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/SecureScreen-master.d",
+    "diagnostics" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/SecureScreen-master.dia",
+    "emit-module-dependencies" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/SecureScreen-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/SecureScreen-master-emit-module.dia",
+    "swift-dependencies" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/SecureScreen-master.swiftdeps"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/AppDelegate.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/EventBlocker.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/EventBlocker.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/EventBlocker.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/EventBlocker.o"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/HotkeyManager.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/HotkeyManager.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/HotkeyManager.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/HotkeyManager.o"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockManager.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/LockManager.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/LockManager.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/LockManager.o"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/LockWindow.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/LockWindow.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/LockWindow.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/LockWindow.o"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/PermissionsManager.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/PermissionsManager.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/PermissionsManager.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/PermissionsManager.o"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/ShieldView.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/ShieldView.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/ShieldView.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/ShieldView.o"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/StatusBarController.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/StatusBarController.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/StatusBarController.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/StatusBarController.o"
+  },
+  "/Users/hakshaysundar/Documents/Projects/SecureScreen/Sources/SecureScreen/main.swift" : {
+    "index-unit-output-path" : "/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/hakshaysundar/Documents/Projects/SecureScreen/DerivedData/SecureScreen/Build/Intermediates.noindex/ArchiveIntermediates/SecureScreen/IntermediateBuildFilesPath/SecureScreen.build/Release/SecureScreen.build/Objects-normal/arm64/main.o"
+  }
+}

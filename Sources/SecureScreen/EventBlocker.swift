@@ -87,6 +87,22 @@ final class EventBlocker {
         CGEvent.tapEnable(tap: tap, enable: true)
     }
 
+    // Check if loc (CG coords) falls in the menu bar strip of any screen.
+    // The naive `loc.y < menuBarThreshold` only works for the primary display;
+    // monitors arranged above the primary have negative y, making all their clicks pass.
+    private func isInAnyMenuBar(_ loc: CGPoint) -> Bool {
+        guard let primary = NSScreen.screens.first else { return loc.y < menuBarThreshold }
+        let primaryH = primary.frame.height
+        for screen in NSScreen.screens {
+            // AppKit y-up → CG y-down: top of screen in CG = primaryH - screen.frame.maxY
+            let cgTop = primaryH - screen.frame.maxY
+            let menuBarRect = CGRect(x: screen.frame.minX, y: cgTop,
+                                    width: screen.frame.width, height: menuBarThreshold)
+            if menuBarRect.contains(loc) { return true }
+        }
+        return false
+    }
+
     private func handle(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent) -> Unmanaged<CGEvent>? {
         // macOS auto-disables the tap after a period of inactivity or under load.
         // Re-enable immediately so blocking stays live.
@@ -126,8 +142,7 @@ final class EventBlocker {
            type == .rightMouseDown || type == .rightMouseUp ||
            type == .leftMouseDragged || type == .rightMouseDragged || type == .otherMouseDragged {
             let loc = event.location
-            // Allow exact status item rect OR any click in the menu bar strip (y < 40 in CG coords)
-            if (!allowedRect.isEmpty && allowedRect.contains(loc)) || loc.y < menuBarThreshold {
+            if (!allowedRect.isEmpty && allowedRect.contains(loc)) || isInAnyMenuBar(loc) {
                 return Unmanaged.passRetained(event)
             }
             return nil
